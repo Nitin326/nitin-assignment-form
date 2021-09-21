@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2015/12/03/22/15/tablet-1075789__340.jpg" sizes="16x16">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="../assets/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Submit Your Work</h1>
+    </header>
+    <div class="content">
+        <div class="content__inner">
+            <div class="container overflow-hidden">
+                <div class="multisteps-form">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+                            <div class="multisteps-form__progress">
+                                <button class="multisteps-form__progress-btn js-active" type="button"
+                                    title="User Info">Student Info</button>
+                                <button class="multisteps-form__progress-btn" type="button" title="Address">Academic
+                                    Info</button>
+                                <button class="multisteps-form__progress-btn" type="button"
+                                    title="Order Info">Assignment
+                                    Info</button>
+                                <button class="multisteps-form__progress-btn" type="button" title="Message">Submit Here
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-7 m-auto">
+                            <form class="multisteps-form__form" method="POST" action="/" role="form">
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active"
+                                    data-animation="scaleIn">
+                                    <h3 class="multisteps-form__title">Student Info</h3>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-12 col-lg-12">
+                                                <input class="multisteps-form__input form-control" type="text"
+                                                    placeholder="Full Name" name="sname" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-12 col-lg-12">
+                                                <input class="multisteps-form__input form-control" type="email"
+                                                    placeholder="Email" name="semail" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-12 col-lg-12">
+                                                <input class="multisteps-form__input form-control" type="text"
+                                                    placeholder="Contact Number" name="scontact" inputmode="numeric"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn btn-primary ml-auto js-btn-next" type="button"
+                                                title="Next">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white"
+                                    data-animation="scaleIn">
+                                    <h3 class="multisteps-form__title">Academic Info</h3>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <div class="col">
+                                                <input class="multisteps-form__input form-control" type="text"
+                                                    placeholder="Collage" name="scollage" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <div class="col">
+                                                <input class="multisteps-form__input form-control" type="text"
+                                                    placeholder="Branch" name="sbranch" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <div class="col">
+                                                <input class="multisteps-form__input form-control" type="text"
+                                                    placeholder="Roll Number" name="sroll" inputmode="numeric"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn btn-primary js-btn-prev" type="button"
+                                                title="Prev">Prev</button>
+                                            <button class="btn btn-primary ml-auto js-btn-next" type="button"
+                                                title="Next">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white"
+                                    data-animation="scaleIn">
+                                    <h3 class="multisteps-form__title">Assignment Detail</h3>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <input class="multisteps-form__input form-control" type="text"
+                                                placeholder="Subject" name="ssubject" required />
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <input class="multisteps-form__input form-control" type="text"
+                                                placeholder="Topic" name="stopic" required />
+                                        </div>
+                                        <div class="row">
+                                            <div class="button-row d-flex mt-4 col-12">
+                                                <button class="btn btn-primary js-btn-prev" type="button"
+                                                    title="Prev">Prev</button>
+                                                <button class="btn btn-primary ml-auto js-btn-next" type="button"
+                                                    title="Next">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white"
+                                    data-animation="scaleIn">
+                                    <h3 class="multisteps-form__title">Submit Here</h3>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <input class="multisteps-form__input form-control" type="url"
+                                                placeholder="Assignment Link" name="slink" required />
+                                        </div>
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn btn-primary js-btn-prev" type="button"
+                                                title="Prev">Prev</button>
+                                            <button class="btn btn-success ml-auto" type="submit"
+                                                title="Send">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const DOMstrings = {
+            stepsBtnClass: 'multisteps-form__progress-btn',
+            stepsBtns: document.querySelectorAll(`.multisteps-form__progress-btn`),
+            stepsBar: document.querySelector('.multisteps-form__progress'),
+            stepsForm: document.querySelector('.multisteps-form__form'),
+            stepsFormTextareas: document.querySelectorAll('.multisteps-form__textarea'),
+            stepFormPanelClass: 'multisteps-form__panel',
+            stepFormPanels: document.querySelectorAll('.multisteps-form__panel'),
+            stepPrevBtnClass: 'js-btn-prev',
+            stepNextBtnClass: 'js-btn-next'
+        };
+
+
+        const removeClasses = (elemSet, className) => {
+
+            elemSet.forEach(elem => {
+
+                elem.classList.remove(className);
+
+            });
+
+        };
+
+        const findParent = (elem, parentClass) => {
+
+            let currentNode = elem;
+
+            while (!currentNode.classList.contains(parentClass)) {
+                currentNode = currentNode.parentNode;
+            }
+
+            return currentNode;
+
+        };
+
+        const getActiveStep = elem => {
+            return Array.from(DOMstrings.stepsBtns).indexOf(elem);
+        };
+
+        const setActiveStep = activeStepNum => {
+
+            removeClasses(DOMstrings.stepsBtns, 'js-active');
+
+            DOMstrings.stepsBtns.forEach((elem, index) => {
+
+                if (index <= activeStepNum) {
+                    elem.classList.add('js-active');
+                }
+
+            });
+        };
+
+        const getActivePanel = () => {
+
+            let activePanel;
+
+            DOMstrings.stepFormPanels.forEach(elem => {
+
+                if (elem.classList.contains('js-active')) {
+
+                    activePanel = elem;
+
+                }
+
+            });
+
+            return activePanel;
+
+        };
+
+        const setActivePanel = activePanelNum => {
+
+            removeClasses(DOMstrings.stepFormPanels, 'js-active');
+
+            DOMstrings.stepFormPanels.forEach((elem, index) => {
+                if (index === activePanelNum) {
+
+                    elem.classList.add('js-active');
+
+                    setFormHeight(elem);
+
+                }
+            });
+
+        };
+
+        const formHeight = activePanel => {
+
+            const activePanelHeight = activePanel.offsetHeight;
+
+            DOMstrings.stepsForm.style.height = `${activePanelHeight}px`;
+
+        };
+
+        const setFormHeight = () => {
+            const activePanel = getActivePanel();
+
+            formHeight(activePanel);
+        };
+
+        DOMstrings.stepsBar.addEventListener('click', e => {
+
+            const eventTarget = e.target;
+
+            if (!eventTarget.classList.contains(`${DOMstrings.stepsBtnClass}`)) {
+                return;
+            }
+
+            const activeStep = getActiveStep(eventTarget);
+
+            setActiveStep(activeStep);
+
+            setActivePanel(activeStep);
+        });
+
+        DOMstrings.stepsForm.addEventListener('click', e => {
+
+            const eventTarget = e.target;
+
+            if (!(eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`) || eventTarget.classList.contains(`${DOMstrings.stepNextBtnClass}`))) {
+                return;
+            }
+
+            const activePanel = findParent(eventTarget, `${DOMstrings.stepFormPanelClass}`);
+
+            let activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(activePanel);
+
+            if (eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`)) {
+                activePanelNum--;
+
+            } else {
+
+                activePanelNum++;
+
+            }
+
+            setActiveStep(activePanelNum);
+            setActivePanel(activePanelNum);
+
+        });
+
+        window.addEventListener('load', setFormHeight, false);
+
+        window.addEventListener('resize', setFormHeight, false);
+
+
+        const setAnimationType = newType => {
+            DOMstrings.stepFormPanels.forEach(elem => {
+                elem.dataset.animation = newType;
+            });
+        };
+
+        //changing animation
+        const animationSelect = document.querySelector('.pick-animation__select');
+
+        animationSelect.addEventListener('change', () => {
+            const newAnimationType = animationSelect.value;
+
+            setAnimationType(newAnimationType);
+        });
+
+    </script>
+
+
+</body>
+
+</html>
